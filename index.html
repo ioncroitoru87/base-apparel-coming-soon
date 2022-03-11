@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <div class="logo"><img src="images/logo.svg" alt="" /></div>
+        <div class="hero__text">
+          <h1>
+            <span class="heading">We're</span> <br />
+            coming <br />
+            soon
+          </h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form>
+            <input type="text" placeholder="Email Address" />
+            <button><img src="images/icon-arrow.svg" alt="" /></button>
+          </form>
+        </div>
+        <div class="hero__img">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="images/hero-desktop.jpg"
+              type="image/jpg"
+            />
+
+            <source srcset="images/hero-mobile.jpg" type="image/jpg" />
+
+            <img
+              src="images/hero-mobile.jpg"
+              alt=""
+              srcset="
+                images/hero-mobile.jpg   500w,
+                images/hero-desktop.jpg 1000w
+              "
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
